@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  border: 1
+  size: 1
+  size_p: 1
+  white_p: 1
+  black_p: 1
+
+two:
+  border: 1
+  size: 1
+  size_p: 1
+  white_p: 1
+  black_p: 1
