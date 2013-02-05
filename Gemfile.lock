@@ -87,6 +87,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.4.1.beta)
-  pg (= 0.12.2)
+  pg
   rails
   sqlite3

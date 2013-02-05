@@ -1,5 +1,12 @@
 <!--my scripts-->
 <script>
+	// variables from controller
+	var border 	= <%= @border 	%>
+	  , size	= <%= @size 	%>
+	  , size_p	= <%= @size_p 	%>
+	  , white_p	= <%= @white_p 	%>
+	  , black_p = <%= @black_p 	%>
+
 	function generate_Mondrian(border, size, size_p, white_p, black_p){
 		// ************************************************************************************
 		// FUNCTIONS HELPERS
@@ -162,11 +169,11 @@
 		})
 	}
 	   
-	generate_Mondrian(5, 50, 49, 85, 25)
+	generate_Mondrian(border, size, size_p, white_p, black_p)
 
 	// press any key to generate again
 	$(document).live('keydown', function(){
 		d3.select("svg").remove()
-		generate_Mondrian(5, 50, 49, 85, 24)
+		generate_Mondrian(border, size, size_p, white_p, black_p)
 	})
 </script>

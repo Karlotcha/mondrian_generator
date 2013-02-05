@@ -1,5 +1,5 @@
 WebApp::Application.routes.draw do
-  root to: 'settings#index'
+  root to: 'settings#new'
 
   resources :generations
 
