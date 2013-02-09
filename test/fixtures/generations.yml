@@ -5,3 +5,13 @@ one:
 
 two:
   n: 1
+# == Schema Information
+#
+# Table name: generations
+#
+#  id         :integer         not null, primary key
+#  n          :integer
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#
+

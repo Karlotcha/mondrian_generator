@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130204221711) do
+ActiveRecord::Schema.define(:version => 20130207224104) do
 
   create_table "generations", :force => true do |t|
     t.integer  "n"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20130204221711) do
     t.integer  "black_p"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "status"
   end
 
 end

@@ -13,3 +13,17 @@ two:
   size_p: 1
   white_p: 1
   black_p: 1
+# == Schema Information
+#
+# Table name: settings
+#
+#  id         :integer         not null, primary key
+#  border     :integer
+#  size       :integer
+#  size_p     :integer
+#  white_p    :integer
+#  black_p    :integer
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#
+

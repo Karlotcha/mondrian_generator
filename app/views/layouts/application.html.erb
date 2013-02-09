@@ -8,23 +8,24 @@
 		
 		<!--jQuery-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>		
-		<!--css-->
-		<style type="text/css">
-			body {
-			  background: black;
-			}
-			
-			svg {
-				width: 1500px;
-				height:800px;
-			}
-		</style>
+		
+		<%= stylesheet_link_tag    "application", media: "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
 	<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
 	<body>
 		<!--d3-->
 		<script src="http://d3js.org/d3.v2.js"></script>
-
-		<%= yield %>
-
+		
+		<header>
+		</header>
+		
+		<nav>
+		</nav>
+		
+		<div class="container">
+			<%= yield %>
+		</div>
+		
 	</body>
 </html>

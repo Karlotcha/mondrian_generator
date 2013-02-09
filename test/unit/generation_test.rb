@@ -5,3 +5,13 @@ class GenerationTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+# == Schema Information
+#
+# Table name: generations
+#
+#  id         :integer         not null, primary key
+#  n          :integer
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#
+
