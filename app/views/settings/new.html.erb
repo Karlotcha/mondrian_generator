@@ -4,7 +4,7 @@
 <!--my scripts-->
 <script>
 	// variables from controller
-	var border 	= <%= @setting.border 	%>
+	var border 	= 5
 	  , size	= <%= @setting.size 	%>
 	  , size_p	= <%= @setting.size_p 	%>
 	  , white_p	= <%= @setting.white_p 	%>
@@ -168,10 +168,9 @@
 		Rect.list.forEach(function(e){
 			generate(e.x, e.y, e.width, e.height)
 		})
-		
-		main_svg.style('border', 'solid black ' + border + 'px' )
-				.style('width' ,  matrix_size*(size+2*border))
-				.style('height',  matrix_size*(size+2*border))
+		$('svg').css('border', 'solid black ' + border + 'px' )
+				.css('width' , matrix_size*(size+2*border))
+				.css('height', matrix_size*(size+2*border))
 	}
 	   
 	generate_Mondrian(border, size, size_p, white_p, black_p)

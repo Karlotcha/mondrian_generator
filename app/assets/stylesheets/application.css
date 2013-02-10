@@ -13,29 +13,24 @@
  */
 
 body {
-  background-color: grey !important;
-}
-
-section {
-
-}
-
-svg {
-	width: 600px;
-	height:600px;
-	border: solid 1px black; 
+	background-color: grey !important;
 }
 
 form {
 	display: inline-block;
 }
 
-.container {
-  text-align: center;
+svg {
+	text-align: left !important;
+	font-family: none !important;
+	margin: 0px auto;
+	display: block;
+	vertical-align: middle;
 }
 
 .hero-unit {
 	margin: 20px 0 30px;
 	border-bottom: 1px solid #eee;
 	padding: 10px !important;
+	text-align: center;
 }
