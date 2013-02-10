@@ -24,7 +24,7 @@
 		var main_svg 	  = d3.select(".svg").append("svg:svg")
 
 		// ************************************************************************************
-		// algorithm used to generate the mapping, absolute messy code, don't look at it, PLEASE 
+		// algorithm used to generate the mapping
 		// ************************************************************************************
 		  , Cell 		= function(){
 				this.used  = false		
@@ -93,7 +93,7 @@
 
 		  
 		// ************************************************************************************
-		// generate rectangle
+		// draw rectangle
 		// ************************************************************************************
 		function generate(x, y, width, height) {
 			var rect = main_svg.append("svg:rect")
