@@ -1,6 +1,3 @@
-class Generation < ActiveRecord::Base
-  attr_accessible :n
-end
 # == Schema Information
 #
 # Table name: generations
@@ -11,3 +8,8 @@ end
 #  updated_at :datetime        not null
 #
 
+class Generation < ActiveRecord::Base
+  validates :n, :uniqueness, :presence => true
+  
+  has_many :settings
+end

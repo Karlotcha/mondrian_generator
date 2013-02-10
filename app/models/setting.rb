@@ -13,7 +13,17 @@
 #
 
 class Setting < ActiveRecord::Base
-  attr_accessible :black_p, :border, :size, :size_p, :white_p
+  belongs_to :generation
+  after_save :next_generation
+
+  protected
+
+  def next_generation
+    if Generation.last.settings.where(status: 'accepted').count > 99
+      n = Generation.last.n
+      Generation.new.update_attribute(:n, n+1)
+    end
+  end
 end
 
 

@@ -4,9 +4,9 @@
   = form_for(@setting) do |f|
     %input{name: 'id'  	   , type: 'hidden', value: id}
     %input{name: 'status'  , type: 'hidden', value: 'accepted'}
-    = f.submit('Yes! =]', class: 'btn btn-success')
+    = f.submit('Yes', class: 'btn btn-success')
 
   = form_for(@setting) do |f|
     %input{name: 'id'  	   , type: 'hidden', value: id}
     %input{name: 'status'  , type:'hidden' , value:'rejected'}
-    = f.submit('No! ლ(ಠ益ಠლ', class: 'btn btn-danger')
+    = f.submit('No', class: 'btn btn-danger')

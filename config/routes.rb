@@ -1,8 +1,6 @@
 WebApp::Application.routes.draw do
   root to: 'settings#new'
 
-  resources :generations
-
   resources :settings
 
   # The priority is based upon order of creation:
