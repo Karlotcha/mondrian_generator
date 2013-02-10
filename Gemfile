@@ -13,3 +13,7 @@ end
 group :production do
   gem 'pg'
 end
+
+group :assets do 
+   gem 'uglifier' 
+end 
